@@ -64,7 +64,7 @@ function afterSubmit(e){
             buttonText.textContent = "Send";
             buttonSpinner.classList.add("d-none");
             submitButton.disabled = false;
-        },8000);
+        },3000);
       });
 
 }
