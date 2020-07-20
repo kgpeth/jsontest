@@ -34,7 +34,7 @@ function afterSubmit(e){
         city: city.value,
     };
 
-    var url = "https://script.google.com/macros/s/AKfycbws2O8oT_JqohrIgzi0BYTIi0hvGkBB64_BYMYpgn9kJFGVMiWq/exec";
+    var url = "https://script.google.com/macros/s/AKfycbx3P3daXkxLDJBw6i-S5p3gCuJWyHghIoZmVy0ocCqWfXNdu5FA/exec";
 
     buttonText.textContent = "Saving..";
     buttonSpinner.classList.remove("d-none");
