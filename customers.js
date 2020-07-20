@@ -60,6 +60,7 @@ function afterSubmit(e){
         unknownError.classList.remove("d-none");
         setTimeout(function(){
             unknownError.classList.add("d-none");
+            customerForm.reset();
             buttonText.textContent = "Send";
             buttonSpinner.classList.add("d-none");
             submitButton.disabled = false;
