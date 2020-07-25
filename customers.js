@@ -67,7 +67,6 @@ function afterSubmit(e){
             submitButton.disabled = false;
         },3000);
       });
-
 }
 
 customerForm.addEventListener("submit",afterSubmit);
