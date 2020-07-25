@@ -39,6 +39,7 @@ function afterSubmit(e){
     };
 
     var url = "https://script.google.com/macros/s/AKfycbx3P3daXkxLDJBw6i-S5p3gCuJWyHghIoZmVy0ocCqWfXNdu5FA/exec";
+    var url = "https://script.google.com/macros/s/AKfycbxTUSUVu0RoofC3xZm7_n52aKhIBPNuNTaKOSH2w9VeVzVPMlb6/exec";
 
     buttonText.textContent = "Saving..";
     buttonSpinner.classList.remove("d-none");
