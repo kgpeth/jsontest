@@ -3,8 +3,6 @@ var firstName = document.getElementById("firstName");
 var lastName = document.getElementById("lastName");
 var phoneNumber = document.getElementById("phoneNumber");
 var city = document.getElementById("city");
-var zip = document.getElementById("zip");
-var favefunction = document.getElementById("favefunction");
 var submitButton = document.getElementById("submitButton");
 var buttonSpinner = document.getElementById("buttonSpinner");
 var buttonText = document.getElementById("buttonText");
@@ -34,8 +32,6 @@ function afterSubmit(e){
         last: lastName.value,
         phone: phoneNumber.value,
         city: city.value,
-        zip: zip.value,
-        favefunction: favefunction.value,
     };
 
     var url = "https://script.google.com/macros/s/AKfycbx3P3daXkxLDJBw6i-S5p3gCuJWyHghIoZmVy0ocCqWfXNdu5FA/exec";
