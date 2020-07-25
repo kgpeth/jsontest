@@ -38,13 +38,19 @@
                 <input type="text" class="form-control" placeholder="City" id="city">
                 </div>
 
-              <div class="col">
+        <div class="input-field col s6">
              <input id="zip" type="text" class="validate" required pattern="^\d{5}$">
              <label for="zip">Zip Code</label>
                 </div>
         <div class="input-field col s6">
              <input disabled id="est" type="text" class="validate" required>
              <label for="est">Estimate</label>
+        </div>
+              
+        <div class="input-field col s12">
+             <i class="material-icons prefix">attach_money</i>
+             <input type="text" id="favefunction" class="autocomplete" required>
+             <label for="favefunction">your fav pick</label>
         </div>
             </div>
             <button type="submit" class="btn btn-primary" type="button" id="submitButton">
