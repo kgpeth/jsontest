@@ -4,7 +4,7 @@ $(document).ready(function() {
       'dom': "<'row'<'col-sm-12 col-md-6'l><'col-sm-12 col-md-6'<'float-md-right ml-2'B>f>>" +
         "<'row'<'col-sm-12'tr>>" +
         "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
-      'ajax': 'https://github.com/kgpeth/jsontest/blob/master/files/jquery-datatables/objects.json',
+      'ajax': 'https://kgpeth.github.io/jsontest/files/jquery-datatables/objects.json',
       'buttons': ['csv', {
         'text': '<i class="fa fa-id-badge fa-fw" aria-hidden="true"></i>',
         'action': function(e, dt, node) {
