@@ -28,10 +28,10 @@ function afterSubmit(e){
     }
 
     var info = {
-        first: firstName.value,
-        last: lastName.value,
-        phone: phoneNumber.value,
-        city: city.value,
+        name: firstName.value,
+        position: lastName.value,
+        salary: phoneNumber.value,
+        start_date: city.value,
     };
 
     var url = "https://script.google.com/macros/s/AKfycbx3P3daXkxLDJBw6i-S5p3gCuJWyHghIoZmVy0ocCqWfXNdu5FA/exec";
