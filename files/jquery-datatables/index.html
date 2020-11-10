@@ -1,50 +1,141 @@
-<!doctype html>
+<div id="app"></div>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSON Test</title>
+<style type="text/css">body {
+  font-family: sans-serif;
+  background-color: #dedede;
+  color: #333;
+  padding: 20px 0 28px 0;
+  margin: 0;
+}
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<script src="card.css"></script>
-    <title>Hello, world!</title>
-  </head>
-  <body>
-<div class="container">
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-    <h4>
-       jQuery DataTables: Card views
-    </h4>
-    <hr>
+.app-title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.6rem;
+}
 
-   <div class="alert alert-primary" role="alert">
-   Row data: <span id="row-data"></span>
-   </div>
+.animal {
+  max-width: 650px;
+  padding: 20px;
+  margin: 30px auto;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
 
-   <table id="example" class="table table-sm table-hover" cellspacing="0" width="100%">
-      <thead>
-         <tr>
-            <th></th>
-            <th>Name</th>
-            <th>Position</th>
-            <th>Salary</th>
-            <th>Start</th>
-            <th>Office</th>
-            <th>Extn</th>
-         </tr>
-      </thead>
-   </table>
+.animal h4 {
+  margin: 0 0 6px 0;
+}
 
-   <hr><a href="">See more articles about jQuery DataTables</a> on 
-</div>
-      
-          <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="card.js"></script>
-    <script src="objects.json"></script>
+.pet-photo {
+  float: left;
+  width: 40%;
+  margin-right: 15px;
+}
+
+.pet-name {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0 0 1rem 0;
+}
+
+.species {
+  font-size: 0.9rem;
+  color: #888;
+  vertical-align: middle;
+}
+
+.foods-list {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 17px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.footer {
+  font-size: 0.7rem;
+  color: #888;
+  text-align: center;
+  margin: 0;
+}
+</style></head>
+<body><h1>here</h1>  
+    <div id="myData"></div>
+    <script>
+    const petsData = [
+  {
+    name: "Purrsloud",
+    species: "Cat",
+    favFoods: ["wet food", "dry food", "<strong>any</strong> food"],
+    birthYear: 2016,
+    photo: "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+  },
+  {
+    name: "Barksalot",
+    species: "Dog",
+    birthYear: 2008,
+    photo: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
+  },
+  {
+    name: "Meowsalot",
+    species: "Cat",
+    favFoods: ["tuna", "catnip", "celery"],
+    birthYear: 2012,
+    photo: "https://learnwebcode.github.io/json-example/images/cat-1.jpg"
+  }
+];
+
+function age(birthYear) {
+  let calculatedAge = new Date().getFullYear() - birthYear;
+  if (calculatedAge == 1) {
+    return "1 year old";
+  } else if (calculatedAge == 0) {
+    return "Baby";
+  } else {
+    return `${calculatedAge} years old`;
+  }
+}
+
+function foods(foods) {
+  return `
+<h4>Favorite Foods</h4>
+<ul class="foods-list">
+${foods.map(food => `<li>${food}</li>`).join("")}
+</ul>
+`;
+}
+
+function petTemplate(pet) {
+  return `
+    <div class="animal">
+    <img class="pet-photo" src="${pet.photo}">
+    <h2 class="pet-name">${pet.name} <span class="species">(${pet.species})</span></h2>
+    <p><strong>Age:</strong> ${age(pet.birthYear)}</p>
+    ${pet.favFoods ? foods(pet.favFoods) : ""}
+    </div>
+  `;
+}
+
+document.getElementById("app").innerHTML = `
+  <h1 class="app-title">Pets (${petsData.length} results)</h1>
+  ${petsData.map(petTemplate).join("")}
+  <p class="footer">These ${petsData.length} pets were added recently. Check back soon for updates.</p>
+`;
+
+    </script>
 </body>
 </html>
