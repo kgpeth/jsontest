@@ -76,12 +76,28 @@ img {
 <body><h1>here</h1>  
     <div id="myData"></div>
     <script>
-        var petsData = 'https://kgpeth.github.io/jsontest/files/jquery-datatables/petsData.json';
-$.getJSON(petsData, function(data) {
-  console.log("This is an example of a static JSON file being served by a web server.")
-  console.log(data);
-});
-        
+    const petsData = [
+  {
+    "name": "Purrsloud",
+    "species": "Cat",
+    "favFoods": ["wet food", "dry food", "<strong>any</strong> food"],
+    "birthYear": 2016,
+    "photo": "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+  },
+  {
+    "name": "Barksalot",
+    "species": "Dog",
+    "birthYear": 2008,
+    "photo": "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
+  },
+  {
+    "name": "Meowsalot",
+    "species": "Cat",
+    "favFoods": ["tuna", "catnip", "celery"],
+    "birthYear": 2012,
+    "photo": "https://learnwebcode.github.io/json-example/images/cat-1.jpg"
+  }
+];
 
 function age(birthYear) {
   let calculatedAge = new Date().getFullYear() - birthYear;
