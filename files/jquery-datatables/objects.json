@@ -1,6 +1,4 @@
 [
-{
-    "status": 200,
     "data": [
     {
         "id": "1",
@@ -534,4 +532,4 @@
         "salary": 0,
         "start_date": "added"
     }]
-}]
+]
