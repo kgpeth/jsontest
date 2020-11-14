@@ -76,8 +76,28 @@ img {
 <body><h1>is the date here</h1>  
     <div id="myData"></div>
     <script>
-    const petsData = {'ajax': 'https://kgpeth.github.io/jsontest/files/jquery-datatables/petsData.json'};
-          
+const petsData = [
+  {
+    "name": "Purrsloud",
+    "species": "Cat",
+    "favFoods": ["wet food", "dry food", "<strong>any</strong> food"],
+    "birthYear": 2016,
+    "photo": "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+  },
+  {
+    "name": "Barksalot",
+    "species": "Dog",
+    "birthYear": 2008,
+    "photo": "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
+  },
+  {
+    "name": "Meowsalot",
+    "species": "Cat",
+    "favFoods": ["tuna", "catnip", "celery"],
+    "birthYear": 2012,
+    "photo": "https://learnwebcode.github.io/json-example/images/cat-1.jpg"
+  }
+];          
 
 function age(birthYear) {
   let calculatedAge = new Date().getFullYear() - birthYear;
