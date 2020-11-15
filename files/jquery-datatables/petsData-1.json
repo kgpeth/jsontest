@@ -1,9 +1,7 @@
 [
   {
     "name": "aaWhiskers",
-    "species" : "cat",
-    "foods": {
-      "likes": ["celery", "strawberries"]
+    "species" : "cat"
     }
   },
   {
