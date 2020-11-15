@@ -1,16 +1,23 @@
 [
-    {
-        "name": "Cell 2",
-        "species": "Cell 3",
-        "foods": "apple",
-    },
-    {
-        "name": "Cell B",
-        "species": "Cell C",
-        "foods": "pear",
-    },
-    {
-        "name": "Cell 3",
-        "species": "Cell 4",
-        "foods": "banana",
-    }]
+  {
+    "name": "aWhiskers",
+    "species" : "cat",
+    "foods": {
+      "likes": ["celery", "strawberries"],
+      "dislikes": ["carrots"]
+    }
+  },
+  {
+    "name": "aWoof",
+    "species" : "dog",
+    "foods": {
+      "likes": ["dog food"],
+      "dislikes": ["cat food"]
+    }
+  },
+  {
+    "name": "aFluffy",
+    "species" : "cat",
+    "foods": "",
+  }
+]
