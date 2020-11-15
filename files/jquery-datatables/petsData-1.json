@@ -3,20 +3,20 @@
         "id": "1",
         "name": "Cell 2",
         "species": "Cell 3",
-        "foods": apple,
+        "foods": "apple",
         "start_date": ""
     },
     {
         "id": "2",
         "name": "Cell B",
         "species": "Cell C",
-        "foods": pear,
+        "foods": "pear",
         "start_date": ""
     },
     {
         "id": "3",
         "name": "Cell 3",
         "species": "Cell 4",
-        "foods": banana,
+        "foods": "banana",
         "start_date": ""
     }]
