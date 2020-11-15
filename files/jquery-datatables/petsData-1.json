@@ -3,8 +3,7 @@
     "name": "aaWhiskers",
     "species" : "cat",
     "foods": {
-      "likes": ["celery", "strawberries"],
-      "dislikes": ["carrots"]
+      "likes": ["celery", "strawberries"]
     }
   },
   {
