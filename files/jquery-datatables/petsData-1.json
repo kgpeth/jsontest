@@ -1,4 +1,5 @@
 [
+  {
   "data": [
   {
     "name": "aaWhiskers",
@@ -24,4 +25,4 @@
       "dislikes": ["dry food"]
     }
   }]
-]
+  }]
