@@ -1,4 +1,5 @@
 [
+  "data":[
   {
     "name": "aaWhiskers",
     "species" : "cat",
@@ -22,5 +23,5 @@
       "likes": ["canned food"],
       "dislikes": ["dry food"]
     }
-  }
+  }]
 ]
