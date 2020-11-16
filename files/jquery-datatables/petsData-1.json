@@ -2,7 +2,7 @@
   "data": [
   {
     "name": "aaWhiskers",
-    "species" : "cat",
+    "species" : "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
     "foods": {
       "likes": ["dog food"],
       "dislikes": ["cat food"]
