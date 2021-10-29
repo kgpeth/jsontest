@@ -34,7 +34,8 @@ function afterSubmit(e){
         start_date: city.value,
     };
 
-    var url = "https://script.google.com/macros/s/AKfycbx3P3daXkxLDJBw6i-S5p3gCuJWyHghIoZmVy0ocCqWfXNdu5FA/exec";
+//    var url = "https://script.google.com/macros/s/AKfycbx3P3daXkxLDJBw6i-S5p3gCuJWyHghIoZmVy0ocCqWfXNdu5FA/exec";
+    var url = "https://script.google.com/macros/s/AKfycbzWXfzdr_ZhdgEpuXoFrrqu-fJv9V8eeUIOUezJayb-cIWCfVZNBz1ojHO5sKf63tVXjg/exec";
 
 
     buttonText.textContent = "Saving..";
