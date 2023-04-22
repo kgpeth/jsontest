@@ -1,0 +1,69 @@
+    {
+        "data": [
+        {
+            "title": "Parasite",
+            "awards_won": "Best Picture",
+            "rotten_tomato_score": "99%",
+            "imdb_score": "100",
+            "revenue": "$266.9 million",
+            "genre": "Comedy, Drama, Thriller",
+            "year": "2019",
+            "picture": "https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UY1200_CR90,0,630,1200_AL_.jpg",
+            "film_url": "https://en.wikipedia.org/wiki/Parasite_(2019_film)"
+        },
+        {
+            "title": "Joker ",
+            "awards_won": "Best Actor ",
+            "rotten_tomato_score": "68%",
+            "imdb_score": "8.5",
+            "revenue": "$1.074 billion",
+            "genre": "Crime, Drama, Thriller",
+            "year": "2019",
+            "picture": "https://images-na.ssl-images-amazon.com/images/I/71H4EDEfcwL._AC_SL1500_.jpg",
+            "film_url": "https://en.wikipedia.org/wiki/Joker_(2019_film)"
+        },
+        {
+            "title": "Judy ",
+            "awards_won": "Best Actress ",
+            "rotten_tomato_score": "82%",
+            "imdb_score": "6.9",
+            "revenue": "$15 million",
+            "genre": " Biography, Drama, Romance",
+            "year": "2019",
+            "picture": "https://m.media-amazon.com/images/M/MV5BYmE0OTE5NWItMGYyZi00MzUxLWFjN2QtYzBkZGRjZGVmMGFmXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_.jpg",
+            "film_url": "https://en.wikipedia.org/wiki/Judy_(film)"
+        },
+        {
+            "title": "Toy Story 4",
+            "awards_won": "Best Animated Feature Film",
+            "rotten_tomato_score": "97%",
+            "imdb_score": "7.8",
+            "revenue": "$1.073 billion",
+            "genre": "Animation, Adventure, Comedy",
+            "year": "2019",
+            "picture": "https://lumiere-a.akamaihd.net/v1/images/p_toystory4_inhome_ddt-18133_f7a24937.jpeg",
+            "film_url": "https://en.wikipedia.org/wiki/Toy_Story_4"
+        },
+        {
+            "title": "American Factory",
+            "awards_won": "Best Documentary Feature ",
+            "rotten_tomato_score": "96%",
+            "imdb_score": "7.4",
+            "revenue": "not found",
+            "genre": "Documentary ",
+            "year": "2019",
+            "picture": "https://m.media-amazon.com/images/M/MV5BNWFkMDY1MjItZmNkOS00MDg2LWFlMjMtZWU3YmM0MmY3MWM3XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+            "film_url": "https://en.wikipedia.org/wiki/American_Factory"
+        },
+        {
+            "title": "1917",
+            "awards_won": "Best Cinematography ",
+            "rotten_tomato_score": "89%",
+            "imdb_score": "8.3",
+            "revenue": "$159.2 million",
+            "genre": "Drama, War",
+            "year": "2019",
+            "picture": "https://m.media-amazon.com/images/M/MV5BOTdmNTFjNDEtNzg0My00ZjkxLTg1ZDAtZTdkMDc2ZmFiNWQ1XkEyXkFqcGdeQXVyNTAzNzgwNTg@._V1_.jpg",
+            "film_url": "https://en.wikipedia.org/wiki/1917_(2019_film)"
+        }]
+    }
